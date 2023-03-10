@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Macondo);
+
+body{
+  font-family: "Times New Roman", serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  margin: 0 24px;
+}
+
+.header {
+  font-family: "Macondo";
+  background-color: #192937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  width: auto;
+  height: 72px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}

@@ -9,17 +9,28 @@ a{
   text-decoration: none;
   color: white;
   margin: 0 24px;
+  overflow: hidden;
+  background: linear-gradient(to right, gold, gold 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 1s ease;
+}
+
+a:hover {
+  background-position: 0 100%;
 }
 
 .header {
   font-family: "Macondo";
-  background-color: #192937;
+  background-color: #1F2937;
   color: white;
   display: flex;
   justify-content: space-between;
   top: 0;
   left: 0;
-  position: absolute;
   width: 100%;
 }
 
@@ -27,8 +38,9 @@ a{
   width: auto;
   height: 38px;
   border: rgb(56, 56, 179) solid 3px;
-  border-radius: 48px;
+  border-radius: 30px;
   margin: 10px 24px;
+  box-shadow: 3px 3px #13202b;
   transition: transform 1.5s ease-in-out;
 }
 
@@ -36,14 +48,51 @@ a{
   transform: rotate(360deg);
 }
 
+.left-head {
+  display: flex;
+  align-items: center;
+}
+
+#crabism {
+  font-size: 26px;
+}
+
 .links {
   display: flex;
   align-items: center;
   font-size: 18px;
+  font-weight: 800;
 }
 
 .sec1 {
   display: flex;
+  align-items: center;
+  background-color: #1F2937;
+  color: white;
+  border: white solid 1px;
+}
+
+#welcome {
+  font-size: 48px;
+  font-family: "Macondo";
+}
+
+#crab-hat {
+  width: auto;
+  height: 450px;
+}
+
+#crab-hat:hover {
+  animation: tilt-shaking 0.25s infinite;
+}
+
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .footer {
@@ -51,5 +100,4 @@ a{
   justify-content: center;
   align-items: center;
   color: black;
-  
 }

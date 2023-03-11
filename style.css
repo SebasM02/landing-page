@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Macondo);
 
 body{
-  font-family: "Times New Roman", serif;
+  font-family: "Macondo", "Times New Roman", serif;
   background: url(images/underwaterbackground.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -34,7 +34,6 @@ body{
 }
 
 .header {
-  font-family: "Macondo";
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   display: flex;
@@ -77,7 +76,7 @@ body{
   align-items: center;
   align-self: center;
   justify-content: center;
-  color: black;
+  color: white;
   border-radius: 300px;
   margin-top: 40px;
   flex: 1 1 auto;
@@ -88,6 +87,9 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 50px;
 }
 
 
@@ -95,7 +97,7 @@ body{
 #sign > .button {
   --b: 3px;
   --s: .45em; 
-  --color: black;
+  --color: white;
   
   padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
@@ -117,8 +119,8 @@ body{
   width: fit-content;
   height: fit-content;
 
-  font-family: "Macondo";
   font-weight: 600;
+  font-family: "Macondo";
 }
 
 #sign > .button:hover,
@@ -143,7 +145,6 @@ body{
 /* Continue Section 1 */
 #welcome {
   font-size: 48px;
-  font-family: "Macondo";
   margin: 10px;
 }
 
@@ -170,7 +171,6 @@ body{
 }
 
 .intro {
-  font-family: "Macondo";
   max-width: 400px;
   font-size: 20px;
   margin: 10px;
@@ -178,12 +178,39 @@ body{
 
 /* Section 2: Images */
 .sec2 {
-  margin: 40px;
-  background-color: blue;
+  margin: 40px 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cimg {
+  height: 150px;
+  width: auto;
+  background-color: #586ce0;
+  border: groove #1837e4 10px;
+  display: flex;
+}
+
+#rinfo{
+  font-size: 36px;
 }
 
 .img4 {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 72px;
+  width: 100%;
+}
+
+.crabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Footer */

@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Macondo);
 
 body{
-  font-family: "Macondo", "Times New Roman", serif;
+  font-family: "Macondo", "Times New Roman", Times, serif;
   background: url(images/underwaterbackground.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -70,7 +70,7 @@ body{
   font-weight: 800;
 }
 
-/* Section 1 Below Header */
+/* Section 1: Intro */
 .sec1 {
   display: flex;
   align-items: center;
@@ -142,12 +142,7 @@ body{
   flex: 1 1 auto;
 }
 
-/* Continue Section 1 */
-#welcome {
-  font-size: 48px;
-  margin: 10px;
-}
-
+/* Dancing Crab from Section 1 */
 #crab-hat {
   width: auto;
   height: 300px;
@@ -170,21 +165,29 @@ body{
   100% { transform: rotate(0deg); }
 }
 
+/* Continue Section 1 */
+#welcome {
+  font-size: 48px;
+  margin: 10px;
+}
+
 .intro {
   max-width: 400px;
   font-size: 20px;
   margin: 10px;
 }
 
+
 /* Section 2: Images */
 .sec2 {
-  margin: 40px 0;
-  width: 100%;
-  background-color: white;
+  margin: 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 15px;
 }
 
 .cimg {
@@ -197,12 +200,14 @@ body{
 
 #rinfo{
   font-size: 36px;
+  margin-top: 10px;
 }
 
 .img4 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  flex: auto;
   gap: 72px;
   width: 100%;
 }
@@ -213,10 +218,71 @@ body{
   align-items: center;
 }
 
-/* Footer */
-.footer {
+
+/* Section 3: Quote */
+.sec3 {
+  width: 100%;
+  background-color: rgb(4, 51, 82);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+#quote {
+  font-size: 36px;
+  font-family: "Kaushan Script";
+  margin: 30px 60px 5px 60px;
+}
+
+#author {
+  font-size: 24px;
+  align-self: flex-end;
+  margin: 5px 200px 20px 0;
+}
+
+#fun-fact {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: small;
+}
+
+
+/* Section 4: Call to Action */
+.sec4 {
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  background-color: rgb(2, 36, 59);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: rgb(255, 255, 255);
+}
+
+.minisec {
+  margin: 20px 0;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  border-radius: 100px;
+  padding: 20px;
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  flex: auto;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: rgb(4, 51, 82);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

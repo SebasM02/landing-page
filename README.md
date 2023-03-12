@@ -1,5 +1,4 @@
 # landing-page
 
-background body image credit: Cristian Palmer (unsplash.com)
+This project is for the Odin Project.
 
-button 1 credit: Temani Afif 
